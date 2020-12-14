@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">paintApp</string>
+    <string name="str_reset">clear</string>
+    <string name="str_painting">Painting</string>
+    <string name="picker_description">color picker dialogue</string>
+    <string name="select_color">#%1$d</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="paint_image">paint image</string>
+    <string name="eraser_image">eraser image</string>
+    <string name="color_selection_image">color selection image</string>
+    <string name="clear_view_image">clear view image</string>
+    <string name="color_picker_title">Brush color selection</string>
+
+    <string-array name="brushArray">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+</resources>

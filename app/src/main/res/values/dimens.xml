@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margin dimensions-->
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="dimen_thirty">30dp</dimen>
+
+    <!--size dimensions-->
+    <dimen name="small_height">30dp</dimen>
+    <dimen name="medium_width">55dp</dimen>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <com.test.paintapp.view.MyPaint
+        android:id="@+id/myDraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_thirty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/paintImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/small_height"
+        android:src="@drawable/ic_baseline_brush_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eraserImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        android:background="@drawable/ic_button_clicked"
+        android:contentDescription="@string/paint_image" />
+
+    <ImageView
+        android:id="@+id/eraserImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/small_height"
+        android:src="@mipmap/eraser_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paintImage"
+        app:layout_constraintWidth_percent="0.25"
+        android:background="@drawable/ic_button_clicked"
+        android:contentDescription="@string/eraser_image"/>
+
+    <ImageView
+        android:id="@+id/colorImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/small_height"
+        android:src="@mipmap/color_picker_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eraserImage"
+        app:layout_constraintWidth_percent="0.25"
+        android:background="@drawable/ic_button_clicked"
+        android:contentDescription="@string/color_selection_image"/>
+
+    <ImageView
+        android:id="@+id/clearView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/small_height"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        android:background="@drawable/ic_button_clicked"
+        android:contentDescription="@string/clear_view_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
